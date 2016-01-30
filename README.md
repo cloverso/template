@@ -4,10 +4,15 @@
 使用方法：
 <script src="xxxx/template.js"></script>
 <script id="ul-template" type="text/template">
+<pre>
   <% data.forEach(funcntion(item){ %>
   <li><%= item.text %></li>
   <% }) %>
+</pre>
 </script>
+
+<script>
+<pre>
     var ulData = [
       {
         className: 'class1',
@@ -25,6 +30,5 @@
     var ul = document.getElementById('ul'),
         ulTemplate = document.getElementById('ul-template');
     ul.innterHTML = template(ulTemplate.innerHTML, ulData);
-<script>
-
+</pre>
 </script>
